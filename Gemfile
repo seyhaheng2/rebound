@@ -4,6 +4,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'foundation-rails'
 gem 'better_errors'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'masonry-rails'
+gem "font-awesome-rails"
+gem 'will_paginate-foundation'
 # Use postgresql as the database for Active Record
 gem 'pg'
 

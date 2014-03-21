@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
+//= require masonry/jquery.masonry
+//= require masonry/modernizr-transitions
 //= require_tree .
+
+$(function() {
+    $(document).foundation();
+});
