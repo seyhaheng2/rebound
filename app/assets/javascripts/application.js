@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(".fancybox").fancybox({
         helpers: {
             title: {
-                type: 'outside'
+                type: 'float'
             },
 
         }

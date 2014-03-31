@@ -91,6 +91,8 @@ body{
 		.image{
 			img{
 				border-radius:3px 3px 0px 0px ;
+				height: 160px;
+				width: 100%;
 			}
 		}
 
@@ -116,9 +118,8 @@ body{
 			font-family: 'Lato',Helvetica,Arial,sans-serif;
 			color:#16A085;
 			font-weight: 500;
-			font-size:18px;
-			margin-top:10px;
-			margin-bottom:10px;
+			font-size:14px;
+			margin-top:5px;
 			text-transform: capitalize;
 			a{
 				color:#1ABC9C;
@@ -130,7 +131,7 @@ body{
 		}.desc{
 			font-size: 14px;
 			margin:0px;
-			margin-top:15px;
+			margin-top:10px;
 			line-height: 1.5;
 		}
 	}
@@ -157,6 +158,12 @@ body{
 	margin-left:-15px;
 	
 }
+.alert-box{
+	margin-bottom: 10px;
+}
+.flash-alert{
+	margin-bottom: 10px;
+}
 
 .show-form{
 
@@ -169,15 +176,17 @@ body{
 			margin-top:3px;
 			padding:5px;
 			background: #FFF;
+			width: 360px;
 		}
 
 	}
 	.name{
 		text-transform: capitalize;
 		color:#16A085;
-		font-size:15pt;
+		font-size:12pt;
+		text-decoration: underline;
 		margin-top: 0px;
-		margin-bottom: 10px;
+		margin-bottom: 7px;
 	}
 	.desc{
 		max-width: 400px;
@@ -225,7 +234,8 @@ body{
 
 }
 .flash-alert{
-	width: 95%;
+	width: 94.5%;
+	margin-bottom:10px;
 }
 
 
