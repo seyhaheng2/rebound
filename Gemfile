@@ -10,6 +10,13 @@ gem 'masonry-rails'
 gem "font-awesome-rails"
 gem 'will_paginate-foundation'
 gem 'fancybox2-rails'
+gem 'devise'
+gem 'omniauth' 
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 

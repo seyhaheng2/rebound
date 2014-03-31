@@ -1,11 +1,16 @@
+<!-- <div class="search-form">
+	<%= form_tag root_path, method: 'get' do %>
+		<%= text_field :search, params[:search] %>
+		<%= submit_tag "Search", name: nil %>
+	<% end %>
+</div> -->
 <div class="container" id="container">
-
 	<% @products.each do |product| %>
 		
 			<div class="box">	
 				<div class="image">
 				<%= link_to "" do %>
-					<%= image_tag(product.image, class: "fancybox-button", rel: "group-box", title: "Railskhmer.us" )%>
+					<%= image_tag(product.image, class: "fancybox", rel: "group-box", title: "RailsSu.." )%>
 				<% end %>
 				</div>
 				

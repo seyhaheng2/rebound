@@ -1,7 +1,10 @@
 class Product < ActiveRecord::Base
 	mount_uploader :image, ImageUploader
-
-	# def self.latest
-	# 	Product.order(:updated_at).last
-	# end
+	def self.search(search)
+	  if search
+	    where('name LIKE ?', "%#{search}%")
+	  else
+	    scoped
+	  end
+	end
 end
