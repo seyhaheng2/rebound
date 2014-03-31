@@ -9,6 +9,7 @@ gem 'mini_magick'
 gem 'masonry-rails'
 gem "font-awesome-rails"
 gem 'will_paginate-foundation'
+gem 'fancybox2-rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
 

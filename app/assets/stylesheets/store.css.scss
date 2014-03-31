@@ -158,6 +158,43 @@ body{
 	
 }
 
+.show-form{
+
+	width: 800px;
+	line-height:20px;
+	padding: 12px;
+
+	.image{
+		img{
+			margin-top:3px;
+			padding:5px;
+			background: #FFF;
+		}
+
+	}
+	.name{
+		text-transform: capitalize;
+		color:#16A085;
+		font-size:15pt;
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	.desc{
+		max-width: 400px;
+		float:right;
+		text-transform: capitalize;
+		font-size:14px;
+		.price{
+			margin-top: 8px;
+			background: #a50964;
+			display: table;
+			padding:7px;
+			border-radius:3px;
+			color:#fff;
+		}
+	}
+	
+}
 
 
 

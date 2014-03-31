@@ -14,10 +14,22 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require fancybox
 //= require masonry/jquery.masonry
 //= require masonry/modernizr-transitions
 //= require_tree .
 
 $(function() {
     $(document).foundation();
+});
+
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        helpers: {
+            title: {
+                type: 'outside'
+            },
+
+        }
+    });
 });

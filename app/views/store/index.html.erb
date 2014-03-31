@@ -2,13 +2,16 @@
 
 	<% @products.each do |product| %>
 		
-			<div class="box ">	
-				<div class="image"><%= image_tag(product.image) %></div>
+			<div class="box">	
+				<div class="image">
+				<%= link_to "" do %>
+					<%= image_tag(product.image, class: "fancybox-button", rel: "group-box", title: "Railskhmer.us" )%>
+				<% end %>
+				</div>
 				
 				<div class="box-body">
-					<div class="name"><%= link_to product.name, products_path %></div>
+					<div class="name"><%= link_to product.name, store_show_path(product_id: product) %></div>
 					<div class="desc"><%= truncate(strip_tags(product.description), length: 150) %></div>
-					<div class="readmore"><%= link_to "Read More" %></div>
 				</div>
 				<div class="box-footer">
 					<%= link_to number_to_currency(product.price) %>
