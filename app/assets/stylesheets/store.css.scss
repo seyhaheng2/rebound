@@ -4,6 +4,7 @@
 // font-family: 'Montez',cursive;
 @import url(http://fonts.googleapis.com/css?family=Montez);
 @import "font-awesome";
+@import 'foundation-datetimepicker';
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -36,7 +37,7 @@ body{
 .header{
 	width: 230px;
 	.shop-order{
-		margin-top:150px;
+		margin-top:200px;
 		margin-left:55px;
 		hr{
 
@@ -143,6 +144,18 @@ body{
 				color:#787878;
 				font-size: 14px;
 			}
+			p{
+				font-size:12px;
+				margin:0px;
+				display: inline;
+			
+				a{
+					text-decoration: underline;
+					font-size:12px;
+					text-transform: capitalize;
+					padding:1px;
+				}
+			}
 	}
 }
 
@@ -211,23 +224,28 @@ body{
 	width: 400px;
 	background: #FFF;
 	display: inline;
+	-webkit-border-radius: 6px;
+			border-radius: 6px;
 		legend{
 			background: none;
 			h4{
 				background: none;
 				margin: 0px;
+				font-family: 'Montez',cursive;
+				font-size:45px;
+				text-shadow:0 0 2px;
 			}
 		}
 	}
 	.login-app{
 		float: right;
-		margin-top:50px;
+		margin-top:80px;
 		margin-left:30px;
 		p{
-			color: #16A085;
+			color: #667;
 			text-align: center;
-			font-family: 'Montez',cursive;
-			font-size: 28px;
+			font-family: Copperplate;
+			font-size: 16px;
 			margin-bottom:5px;
 		}
 	}
@@ -245,6 +263,70 @@ body{
 	    color:#fff;
 	    border-color:#fff;
 }
+
+
+.time-form{
+			margin-top:5px;
+			font-size:11px;
+			display: table;
+			float: right;
+}
+
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	border-radius:4px;
+}
+input[type="file"], input[type="checkbox"], input[type="radio"], select {
+	border-radius:4px;
+}
+
+.signup-form{
+	@extend .login-form;
+	margin-top:50px;
+	fieldset{
+		width: 450px;
+		.large-12{
+			padding:0px;
+			.large-6{
+				padding:0px;
+				width:48.68%;
+			}
+			.large-9{
+				padding:0px;
+				width: 73%;
+			}
+			.large-3{
+				padding:0px;
+			}
+			.large-5{
+				padding:0px;
+				width: 39%;
+			}
+			.large-7{
+				padding:0px;
+			}
+		}
+	}
+	
+}
+textarea{
+	height: 100px;
+}
+
+.pro-list{
+	width: 90%;
+	margin-bottom:50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

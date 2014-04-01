@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1342745096">
+    <data-source source="LOCAL" name="Rails rebound: development" uuid="8b1453f5-471b-435f-b30b-8622fee5acbc">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:rebound_development</jdbc-url>
+      <user-name>sino</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails rebound: test" uuid="3bffa9e6-6e51-4a54-8672-1ef069832f55">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:rebound_test</jdbc-url>
+      <user-name>sino</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

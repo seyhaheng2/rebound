@@ -19,7 +19,18 @@
 					<div class="desc"><%= truncate(strip_tags(product.description), length: 150) %></div>
 				</div>
 				<div class="box-footer">
-					<%= link_to number_to_currency(product.price) %>
+					<%# link_to number_to_currency(product.price) %>
+					<%# link_to "Post By".html_safe, product.user.email if product.user %>
+					<p>
+					Post by: <%= link_to product.user.username if product.user %> 
+						<div class="time-form">
+							<% if product.created_at > Time.now.beginning_of_day %>
+								<%="#{time_ago_in_words(product.created_at)} ago"%> 
+							<% else %> 
+								<%= product.created_at.strftime("%b %d, %Y") %>
+							<% end %>
+						</div>					
+					</p>
 				</div>
 
 			</div>
@@ -30,5 +41,8 @@
 		<%= will_paginate @products, renderer: FoundationPagination::Rails %>
 	</div>
 </div>
+
+
+
 
 

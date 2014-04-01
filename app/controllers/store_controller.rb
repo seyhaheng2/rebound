@@ -1,4 +1,5 @@
 class StoreController < ApplicationController
+  
   def index
   	# @products = Product.order("published_at desc").limit(10)
   	@products = Product.search(params[:search]).paginate(:page => params[:page],per_page: 12)

@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require fancybox
 //= require masonry/jquery.masonry
+//= require foundation-datetimepicker
 //= require masonry/modernizr-transitions
 //= require_tree .
 
@@ -33,3 +34,4 @@ $(document).ready(function() {
         }
     });
 });
+$('.datepicker').fdatetimepicker()

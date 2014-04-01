@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
+gem 'foundation-datetimepicker-rails'
 
 
 # Use postgresql as the database for Active Record
