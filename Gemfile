@@ -16,8 +16,8 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'foundation-datetimepicker-rails'
-
-
+# gem 'texticle', require: 'texticle/rails'
+gem 'pg_search'
 # Use postgresql as the database for Active Record
 gem 'pg'
 

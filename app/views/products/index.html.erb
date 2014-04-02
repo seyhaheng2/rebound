@@ -1,5 +1,6 @@
 <div class="pro-list">
-<h1>Listing products</h1>
+<h1>Listing products <%= link_to 'New Product', new_product_path, class: "button tiny success",style: "marign-bottom:0px;" %></h1>
+
 
 <table>
   <thead>
@@ -29,5 +30,5 @@
   </tbody>
 </table>
 
-<%= link_to 'New Product', new_product_path %>
+
 </div>

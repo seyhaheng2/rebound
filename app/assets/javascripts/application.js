@@ -13,11 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
+
 //= require fancybox
-//= require masonry/jquery.masonry
+
 //= require foundation-datetimepicker
-//= require masonry/modernizr-transitions
+
 //= require_tree .
 
 $(function() {

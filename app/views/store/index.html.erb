@@ -1,6 +1,6 @@
-<!-- <div class="search-form">
+<!--  <div class="search-form">
 	<%= form_tag root_path, method: 'get' do %>
-		<%= text_field :search, params[:search] %>
+		<%= text_field :query, params[:query] %>
 		<%= submit_tag "Search", name: nil %>
 	<% end %>
 </div> -->
@@ -37,7 +37,7 @@
 
 	<% end %>
 
-	<div class="pagination-centered">
+	<div class="pagination-centered margin-b">
 		<%= will_paginate @products, renderer: FoundationPagination::Rails %>
 	</div>
 </div>

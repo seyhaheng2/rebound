@@ -3,9 +3,17 @@ class Product < ActiveRecord::Base
 
 	belongs_to :user
 
-	def self.search(search)
-	  if search
-	    where('name LIKE ?', "%#{search}%")
+	include PgSearch
+	multisearchable :against => [:name, :deacription],
+					:if => :available_in_red?
+
+	pg_search_scope :search, against: [:name, :description],
+	using: {tsearch: {dictionary: "english"}},
+	associated_against: {user: :username}
+
+	def self.text_search(query)
+	  if query.present?
+	  	search(query)
 	  else
 	    scoped
 	  end

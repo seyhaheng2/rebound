@@ -117,6 +117,10 @@ GEM
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
+    pg_search (0.7.3)
+      activerecord (>= 3.1)
+      activesupport (>= 3.1)
+      arel
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -196,6 +200,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-twitter
   pg
+  pg_search
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc

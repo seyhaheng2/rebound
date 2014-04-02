@@ -14,6 +14,7 @@ body{
 }.wrapper{
 	top: 0;
 	left: 0;
+	margin:0px;
 }
 
 .mylogo{
@@ -37,7 +38,7 @@ body{
 .header{
 	width: 230px;
 	.shop-order{
-		margin-top:200px;
+		margin-top:180px;
 		margin-left:55px;
 		hr{
 
@@ -75,8 +76,8 @@ body{
 }
 .body-form{
 	margin-left:290px;
-	margin-top:30px;
-	display: inline-block;
+	margin-top:10px;
+	padding-top:20px;
 
 }
 .box{
@@ -238,8 +239,9 @@ body{
 		}
 	}
 	.login-app{
-		float: right;
-		margin-top:80px;
+		display: inline-block;
+		position: absolute;
+		margin-top:90px;
 		margin-left:30px;
 		p{
 			color: #667;
@@ -316,9 +318,20 @@ textarea{
 .pro-list{
 	width: 90%;
 	margin-bottom:50px;
+	h1{
+		p{
+			margin-bottom: 0px;
+			a{
+			}
+		}
+	}
 }
 
 
+.margin-b{
+	padding-bottom: 20px;
+	
+}
 
 
 
